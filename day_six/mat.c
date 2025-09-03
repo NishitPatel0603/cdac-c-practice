@@ -2,45 +2,44 @@
 
 int main()
 {
-    int i = 0, j = 0, k = 0, l = 0;
+    int i, j, k;
     int a[3][3];
     int b[3][3];
-    int c[3][3];             // 3x3 matrix
-    for (i = 0; i <= 2; i++) // changed to 2 iterations
+    int c[3][3];         
+    for(i=0; i<3; i++)
     {
-        for (j = 0; j <= 2; j++) // changed to 2 iterations
+        for(j=0; j<3; j++)
         {
-            scanf("%d", &a[i][j]); // reading int is safe with scanf
+            scanf("%d", &a[i][j]);
         }
     }
-    for (k = 0; k <= 2; k++) // changed to 2 iterations
+    for(i=0; i<3; i++)
     {
-        for (l = 0; l <= 2; l++) // changed to 2 iterations
+        for(j=0; j<3; j++)
         {
-            scanf("%d", &b[k][l]); // reading int is safe with scanf
+            scanf("%d", &b[i][j]);
         }
     }
-    for (i = 0; i <= 2; i++) // changed to 2 iterations
+    for(i=0;i<3;i++)
     {
-        for (j = 0; j <= 2; j++)
+        for(j=0;j<3;j++)
         {
-            c[i][j] = 0;
+            c[i][j]=0;
+            for(k=0;k<3;k++)
+            {
+                c[i][j]+=a[i][k]*b[k][j];
+            }
         }
     }
-    for (i = 0; i <= 2; i++) // changed to 2 iterations
+    printf("The product of the two matrices is:\n");
+    for(i=0; i<3; i++)
     {
-        for (j = 0; j <= 2; j++)
-        {
-            c[i][j] += a[i][k] * b[k][j];
-        }
-    }
-    for (i = 0; i <= 2; i++) // changed to 2 iterations
-    {
-        for (j = 0; j <= 2; j++) // changed to 2 iterations
+        for(j=0; j<3; j++)
         {
             printf("%d\t", c[i][j]);
         }
-        printf("\n"); // new line after each row
+        printf("\n");
     }
+    
     return 0;
 }

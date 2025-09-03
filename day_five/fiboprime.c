@@ -3,13 +3,18 @@
 int prime(int x)
 {
     if (x <= 1)
-        return 0;
-    for (int i = 2; i * i <= x; i++)
+        return 0; // numbers <= 1 are not prime
+
+    // check all numbers from 2 up to x-1
+    for (int i = 2; i < x; i++)
     {
         if (x % i == 0)
-            return 0;
+        {
+            return 0; // divisible → not prime
+        }
     }
-    return 1;
+
+    return 1; // no divisors found → prime
 }
 
 void fibo(int upper, int lower)
@@ -31,6 +36,6 @@ void fibo(int upper, int lower)
 
 int main()
 {
-    fibo(15, 10);
+    fibo(5, 1);
     return 0;
 }
