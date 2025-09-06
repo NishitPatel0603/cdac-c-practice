@@ -1,15 +1,15 @@
 #include <stdio.h>
-int fact(int);
+int sum_of_n(int);
 int main()
 {
-    int fac;
+    int n;
     printf("enter the value you want :");
-    scanf("%d",&fac);
+    scanf("%d",&n);
 
-    printf("%d",fact(fac));
+    printf("%d",sum_of_n(n));
 }
 
-int fact(int x)
+int sum_of_n(int x)
 {
     int result;
     if(x == 0)
@@ -18,7 +18,7 @@ int fact(int x)
     }
     else
     {
-        result = (x + fact(x-1));
+        result = (x + sum_of_n(x-1));
         return result;
     }
     

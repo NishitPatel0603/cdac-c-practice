@@ -2,13 +2,16 @@
 int gcd(int x,int y)
 {
     int a;
-    while (y != 0)
+    if (y == 0)
     {
-        a = x % y;
-        x = y;
-        y = a;
+       return x;
     }
-    return x;
+    else
+    {
+        return gcd(y,x % y);
+    }
+    
+    
 }
 int main()
 {
