@@ -6,7 +6,7 @@ int swap(int a, int c)
     b = c;
     c = a;
     a = b;
-    printf("%d %d", a,c);
+    printf("%d %d", a, c);
 }
 
 int main()

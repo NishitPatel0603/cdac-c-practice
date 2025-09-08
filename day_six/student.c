@@ -2,7 +2,7 @@
 
 int main()
 {
-    int i, j,lar;
+    int i, j, lar;
     int a[10][4];
     printf("Enter the student marks:\n");
     for (i = 0; i < 2; i++)
@@ -26,17 +26,15 @@ int main()
     }
     printf("\nHighest marks in each subject:\n");
     for (i = 0; i < 4; i++)
-    {  
+    {
         lar = a[0][i];
         for (int j = 1; j < 2; j++)
         {
-            if (lar< a[j][i])               
+            if (lar < a[j][i])
             {
                 lar = a[j][i];
             }
-            
         }
-        printf("the higher number is %d\n",lar);
+        printf("the higher number is %d\n", lar);
     }
-    
 }

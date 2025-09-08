@@ -7,7 +7,7 @@ int main()
     printf("enter the word\n");
     scanf("%s", wor);
     char same[20];
-    strcpy(same,wor);
+    strcpy(same, wor);
     len = strlen(wor);
     for (i = 0; i < len / 2; i++)
     {
@@ -15,7 +15,7 @@ int main()
         wor[i] = wor[len - 1 - i];
         wor[len - 1 - i] = temp;
     }
-    if (strcmp(wor,same))
+    if (strcmp(wor, same))
     {
         printf("it is not a palindorme");
     }

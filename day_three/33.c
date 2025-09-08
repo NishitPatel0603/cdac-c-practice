@@ -1,8 +1,8 @@
-#include<stdio.h>
-int main ()
+#include <stdio.h>
+int main()
 {
-int q;
-scanf("%d",&q);
-q=q>>1;
-	printf("right shift is %d",q);
+	int q;
+	scanf("%d", &q);
+	q = q >> 1;
+	printf("right shift is %d", q);
 }

@@ -1,16 +1,15 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int main()
 {
     int num, man, temp, rev = 0;
     scanf("%d", &num);
     temp = num;
-    while (num>0)
+    while (num > 0)
     {
-       man = num % 10;
-       rev = rev*10 + man;
-       num /= 10;
-
+        man = num % 10;
+        rev = rev * 10 + man;
+        num /= 10;
     }
     if (temp == rev)
     {
@@ -20,6 +19,4 @@ int main()
     {
         printf("it is not palindrome");
     }
-    
-
 }

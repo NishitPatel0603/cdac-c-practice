@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
     if (1 == 0)
@@ -10,6 +10,6 @@ int main()
         goto ti;
     }
 
-    ti:
-        printf("nice");
+ti:
+    printf("nice");
 }

@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include<ctype.h>
+#include <stdio.h>
+#include <ctype.h>
 
 int main()
 {
@@ -8,7 +8,7 @@ int main()
     scanf("%c", &num);
     if (isalpha(num))
     {
-        printf("it is alphabet and its ascii value is %d\n", num); 
+        printf("it is alphabet and its ascii value is %d\n", num);
     }
     else if (isdigit(num))
     {
@@ -17,5 +17,5 @@ int main()
     else
     {
         printf("nothing");
-    }  
+    }
 }

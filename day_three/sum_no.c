@@ -10,21 +10,20 @@
 //         num2=user%10;
 //         //printf("%d\n", num2);
 //     printf("%d\n",num1+num2);
-    
-    
+
 // }
 
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
-    int num1=0,user,sum=0;
+    int num1 = 0, user, sum = 0;
     printf("Enter the number :");
-    scanf("%d",&user);
-    while (user>0)
+    scanf("%d", &user);
+    while (user > 0)
     {
-        num1=user%10;
-        sum=sum+num1;
-        user=user/10;
+        num1 = user % 10;
+        sum = sum + num1;
+        user = user / 10;
     }
-    printf("%d",sum);
+    printf("%d", sum);
 }
