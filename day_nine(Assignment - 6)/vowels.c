@@ -9,11 +9,11 @@ void vowel(char *inp)
     {
         for (int j = 0; j < strlen(inp); j++)
         {
-            if (arr[i] == *(inp + j))
+            if (*(arr + i) == *(inp + j))
             {
                 vow++;
             }
-            if (arr[j] == '\0')
+            if (*(arr+j) == '\0')
             {
                 break;
             }
